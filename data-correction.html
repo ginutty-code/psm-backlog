@@ -505,7 +505,8 @@
           header.forEach((h, i) => obj[h.trim()] = (row[i] || "").trim());
           return obj;
         }).filter(p => p.npc_id);
-        setStatus("Ready — " + allPets.length + " NPCs loaded. Start typing to search.", "info");
+        const npcCount = new Set(allPets.map(p => p.npc_id)).size;
+        setStatus("Ready — " + npcCount + " NPCs loaded (" + allPets.length + " zone rows). Start typing to search.", "info");
       } catch (e) {
         setStatus("Could not load pet data: " + e.message, "error");
       }
