@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSM — Feedback</title>
+<style>
+  :root { --bg:#2e2c29; --surface:#3a3835; --text:#f0ede8; --muted:#9a9590; --border:#5a5550; --gold:#f5d060; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; min-height: 100vh; padding: 24px 16px; max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.3rem; color: var(--gold); margin-bottom: 4px; }
+  .subtitle { color: var(--muted); font-size: 0.85rem; margin-bottom: 24px; }
+  a.card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; margin-bottom: 16px; color: var(--text); text-decoration: none; }
+  a.card:hover { border-color: #c8960c; }
+  a.card strong { display: block; color: var(--gold); margin-bottom: 4px; }
+  a.card span { color: var(--muted); font-size: 0.85rem; }
+  footer { color: var(--muted); font-size: 0.8rem; margin-top: 24px; }
+  footer a { color: #c8960c; }
+</style>
+</head>
+<body>
+  <h1>🐾 Pet Stable Management — Feedback</h1>
+  <p class="subtitle">Pick what you'd like to send.</p>
+
+  <a class="card" href="feature-request.html">
+    <strong>Feature request</strong>
+    <span>Suggest new tools, filters, UI improvements or quality-of-life ideas.</span>
+  </a>
+  <a class="card" href="data-correction.html">
+    <strong>Pet data correction</strong>
+    <span>Report wrong NPC data, missing coordinates, incorrect notes, or a missing NPC.</span>
+  </a>
+
+  <footer>Both forms open a pre-filled issue on <a href="https://github.com/ginutty-code/psm-backlog/issues">psm-backlog</a>.</footer>
+</body>
+</html>
