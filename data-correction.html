@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PSM Hunter Pet Data — Correction Request</title>
+  <title>Pet Stable Management — Data Correction</title>
   <style>
     :root {
       --bg: #2e2c29;
@@ -322,7 +322,7 @@
 
 <body>
 
-  <h1>🐾 PSM Hunter Pet Data — Correction Request</h1>
+  <h1>🐾 Pet Stable Management — Data Correction</h1>
   <p class="subtitle">Found incorrect data? Search for the pet NPC, fill in the correction, and it'll be filed as a
     GitHub issue for review.</p>
 
@@ -688,7 +688,7 @@
 ${evidence ? `**Evidence:** ${evidence}` : ""}
 ${charName ? `**Reported by:** ${charName}` : ""}`;
       window.open(`${ISSUES_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=correction`, "_blank");
-      showSubmitMsg("✅ GitHub opened in a new tab — review and click 'Submit new issue' to file it.", "success");
+      showSubmitMsg("✅ GitHub opened in a new tab — review it and click 'Create' to file it.", "success");
     }
 
     function goToAddRequest() {
@@ -726,7 +726,7 @@ ${charName ? `**Reported by:** ${charName}` : ""}`;
       window.open(`${ISSUES_URL}?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=new-npc`, "_blank");
       const el = document.getElementById("addMsg");
       el.className = "msg success";
-      el.textContent = "✅ GitHub opened in a new tab — review and click 'Submit new issue' to file it.";
+      el.textContent = "✅ GitHub opened in a new tab — review it and click 'Create' to file it.";
       el.classList.remove("hidden");
     }
 
